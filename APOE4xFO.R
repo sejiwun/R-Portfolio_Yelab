@@ -10,7 +10,7 @@ library("survival")
 library("survminer")
 
 
-df <- readRDS("C:/Users/ejiwu/OneDrive/Desktop/Ye Lab/APOE4xFO/dementia_pheno_APOE4_model1_357631_masked.rds")
+df <- readRDS("path")
 
 summary(df)
 #head(df)
@@ -256,5 +256,6 @@ ggsurv <- ggsurvplot(fit,
 
 ggsurv$plot +theme_bw() + 
   theme (legend.position = "right")
+
 
 
